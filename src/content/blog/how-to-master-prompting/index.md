@@ -6,11 +6,7 @@ draft: false
 tags:
 - AI
 - Prompt Engineering
-- LLM
-- ChatGPT
 ---
-
-# Mastering Prompt Engineering: Strategies to Maximize AI Output
 
 ![](https://miro.medium.com/v2/resize:fit:700/0*F797GbkAx6zAjTbh)
 

@@ -6,12 +6,7 @@ draft: false
 tags:
 - AI
 - Chatbot
-- Customer Service
-- Knowledge Base
 ---
-
-
-# Transform Your Customer Service with a Custom Knowledge Base Chatbot: A Step-by-Step Guide Using Voiceflow
 
 _Imagine this: A customer visits your website at 2 AM, looking for answers. Instead of waiting until business hours, they’re instantly greeted by a chatbot that provides exactly what they need — no waiting, no frustration, just immediate service. This isn’t a futuristic fantasy; it’s something you can create today with a custom knowledgebase chatbot powered by Voiceflow._
 

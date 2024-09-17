@@ -6,10 +6,7 @@ draft: false
 tags:
 - Redis
 - Kubernetes
-- OpenShift
-- Sentinel Cluster
 ---
-
 
 Redis — Very cool open-source, in-memory data store. Having it in your Kubernetes will definitely benefit any project you are running in your namespaces. Run this command:
 

@@ -5,9 +5,6 @@ date: "Jul 20, 2023"
 draft: false
 tags:
   - Kubernetes
-  - Local Cluster
-  - Advanced Configuration
-  - Development
 ---
 
 There are a lot of tutorials on how to create a local Kubernetes cluster, but I will show you how to take it no the next level.

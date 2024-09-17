@@ -4,11 +4,8 @@ summary: "A step-by-step guide to configuring and deploying Varnish Cache on Kub
 date: "Sep 5, 2023"
 draft: false
 tags:
-  - Varnish
   - Kubernetes
   - Caching
-  - Proxy
-  - Deployment
 ---
 
 Varnish is an open-source HTTP accelerator that can help improve the performance of web applications by caching frequently requested content. In a Kubernetes environment, setting up a Varnish cache cluster can help improve the scalability and availability of your web applications. In this article, we’ll walk through the steps to create a Varnish cache cluster in Kubernetes.

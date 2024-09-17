@@ -5,10 +5,7 @@ date: "Aug 10, 2023"
 draft: false
 tags:
   - Azure
-  - Blob Storage
-  - REST API
-  - File Upload
-  - Cloud Storage
+  - Cloud
 ---
 
 Azure provides multiple ways you can upload files to blob storage. However, sometimes the situation does not allow us to use all of them. One of the easier ways is to use Azure Rest API.

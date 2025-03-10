@@ -3,20 +3,20 @@
  * for Docker builds.
  */
 import "./src/env.js";
-import images from 'remark-images';
-import emoji from 'remark-emoji';
-import createMDX from '@next/mdx';
+import images from "remark-images";
+import emoji from "remark-emoji";
+import createMDX from "@next/mdx";
 
 const withMDX = createMDX({
-    extension: /\.mdx?$/,
-    options: {
-      remarkPlugins: [images, emoji]
-    }
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [images, emoji],
+  },
 });
 
 /** @type {import("next").NextConfig} */
 const config = {
-    pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx']
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 };
 
 export default withMDX(config);

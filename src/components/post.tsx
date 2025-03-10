@@ -1,15 +1,15 @@
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
 interface PostProps {
-  slug: string
+  slug: string;
 }
 
 const Post = ({ slug }: PostProps): JSX.Element => {
   const DynamicPost = dynamic(() => import(`~/posts/${slug}.mdx`), {
-    loading: () => <div>Loading...</div>
-  })
-  
-  return <DynamicPost />
-}
+    loading: () => <div>Loading...</div>,
+  });
 
-export default Post
+  return <DynamicPost />;
+};
+
+export default Post;

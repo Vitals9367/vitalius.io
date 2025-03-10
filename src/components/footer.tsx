@@ -1,11 +1,11 @@
-import Link from "next/link"
-import { socials, footer } from "~/data/navigation"
+import Link from "next/link";
+import { socials, footer } from "~/data/navigation";
 
 export default function Footer() {
   return (
-    <footer className="py-8 border-t border-gray-100">
-      <div className="container mx-auto px-4 max-w-3xl">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+    <footer className="border-t border-gray-100 py-8">
+      <div className="container mx-auto max-w-3xl px-4">
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-sm text-secondary">{footer}</p>
 
           <div className="flex items-center gap-4">
@@ -13,17 +13,17 @@ export default function Footer() {
               <Link
                 key={index}
                 href={social.href}
-                className="text-secondary hover:text-accent-blue transition-colors"
+                className="text-secondary transition-colors hover:text-accent-blue"
                 target="_blank"
                 rel="noopener noreferrer"
-            >
-              <social.image className="h-5 w-5" />
-              <span className="sr-only">{social.name}</span>
-            </Link>))}
+              >
+                <social.image className="h-5 w-5" />
+                <span className="sr-only">{social.name}</span>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-

@@ -1,0 +1,24 @@
+import { PostList } from "~/components/post-list"
+import type { Metadata } from "next"
+import { baseMetadata } from "~/data/navigation"
+
+export const metadata: Metadata = {
+  ...baseMetadata,
+  title: "Blog | Vitalijus",
+  description: "Explore articles on indie hacking, web development, and productivity.",
+  openGraph: {
+    title: "Blog | Vitalijus",
+    description: "Explore articles on indie hacking, web development, and productivity.",
+    type: "website",
+  },
+}
+
+export default function BlogPage() {
+  return (
+    <div className="container mx-auto px-4 py-8 max-w-3xl">
+      <h1 className="font-serif text-3xl font-bold mb-8 text-primary">All Posts</h1>
+      <PostList />
+    </div>
+  )
+}
+

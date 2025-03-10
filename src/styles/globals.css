@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    --primary: 0 0% 13%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 40%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 210 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom colors */
+    --accent-blue: 210 100% 50%;
+    --accent-red: 354 78% 56%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 60%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 210 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Custom font classes */
+  .font-serif {
+    @apply font-merriweather;
+  }
+}
+
+/* Blog post styling */
+.prose {
+  @apply max-w-none;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply font-serif font-bold text-primary;
+}
+
+.prose p,
+.prose li {
+  @apply text-primary leading-relaxed;
+}
+
+.prose a {
+  @apply text-accent-blue underline hover:text-accent-blue/80;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-gray-200 pl-4 italic text-secondary;
+}
+
+/* Fix the prose code styling */
+.prose code {
+  @apply bg-code-light text-primary px-1 py-0.5 rounded text-sm;
+}
+
+.prose pre {
+  @apply bg-code-light p-4 rounded-md overflow-x-auto;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0;
+}
+
+.prose img {
+  @apply rounded-md;
+}
+
+/* Callouts styling */
+.callout {
+  @apply p-4 rounded-md my-6 bg-gray-50 border border-gray-200;
+}
+
+.callout p {
+  @apply m-0;
+}
+
+.highlight {
+  @apply text-accent-red font-medium;
+}
+

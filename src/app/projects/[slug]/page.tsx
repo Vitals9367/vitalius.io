@@ -14,10 +14,10 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import post from "~/components/post";
 
+type tParams = Promise<{ slug: string }>;
+
 interface ProjectPageProps {
-  params: {
-    slug: string;
-  };
+  params: tParams;
 }
 
 export async function generateStaticParams() {
@@ -70,13 +70,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   if (!project) {
     notFound();
   }
-
-  // Get metrics for this project, or use default empty values
-  const metrics = projectMetrics[slug] || {
-    monthlyUsers: [],
-    monthlyRevenue: [],
-    months: [],
-  };
 
   return (
     <div className="container mx-auto px-4 py-8">

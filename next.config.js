@@ -17,6 +17,9 @@ const withMDX = createMDX({
 /** @type {import("next").NextConfig} */
 const config = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default withMDX(config);

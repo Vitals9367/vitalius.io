@@ -71,7 +71,7 @@ export default async function PostPage({ params }: PostPageProps) {
   }
 
   return (
-    <article className="container mx-auto max-w-2xl px-4 py-8">
+    <article className="container mx-auto px-4 py-8">
       <Link
         href="/blog"
         className="mb-8 inline-flex items-center gap-2 text-primary transition-colors hover:text-accent-blue"

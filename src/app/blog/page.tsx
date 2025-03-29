@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <div className="container mx-auto max-w-3xl px-4 py-8">
+    <div className="container mx-auto px-4 py-8">
       <h1 className="mb-8 font-serif text-3xl font-bold text-primary">
         All Posts
       </h1>

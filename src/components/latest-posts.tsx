@@ -19,7 +19,7 @@ export default function LatestPosts() {
             href={`/blog/${post.slug}`}
             className="group block"
           >
-            <article className="flex flex-col gap-6 md:flex-row">
+            <article className="flex flex-col gap-6 md:flex-row max-h-48">
               <div className="relative aspect-video overflow-hidden rounded-md border border-gray-100 md:aspect-square md:w-1/3">
                 <Image
                   src={post.coverImage || "/placeholder.svg"}

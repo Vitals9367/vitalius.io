@@ -5,9 +5,9 @@ import { socials } from "~/data/navigation";
 
 export default function About() {
   return (
-    <section className="border-t border-gray-100 py-12">
-      <div className="flex flex-col items-center gap-2 md:flex-row md:items-start">
-        <div className="flex justify-center md:justify-start md:pr-4">
+    <section className="flex my-auto border-t border-gray-100 py-12">
+      <div className="mx-auto flex flex-col items-center gap-2 md:flex-row">
+        <div className="flex justify-center md:justify-center md:pr-4">
           <div className="relative h-24 w-24 overflow-hidden rounded-full border border-gray-200">
             <Image
               src="/profile.png"

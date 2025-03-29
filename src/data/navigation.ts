@@ -1,7 +1,10 @@
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { Github, Twitter, Linkedin, Youtube, Instagram } from "lucide-react";
 import { env } from "~/env";
 
-export const navigation = [{ name: "All Posts", href: "/blog" }];
+export const navigation = [
+  { name: "All Posts", href: "/blog" },
+  { name: "Projects", href: "/projects" },
+];
 
 export const socials = [
   { name: "GitHub", href: "https://github.com/Vitals9367", image: Github },
@@ -11,6 +14,9 @@ export const socials = [
     href: "https://www.linkedin.com/in/vitalijusalsauskas/",
     image: Linkedin,
   },
+  { name: "YouTube", href: "https://www.youtube.com/@vitalijus.alsauskas", image: Youtube },
+  { name: "Instagram", href: "https://www.instagram.com/_._vitalius_._/", image: Instagram },
+  { name: "X", href: "https://x.com/alsauskas_v", image: Twitter },
 ];
 
 export const footer = `© ${new Date().getFullYear()} Vitalijus Blog. All rights reserved.`;

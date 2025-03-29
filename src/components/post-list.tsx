@@ -14,7 +14,7 @@ export function PostList() {
           href={`/blog/${post.slug}`}
           className="group block"
         >
-          <article className="flex flex-col gap-6 py-4 md:flex-row">
+          <article className="max-h-48 flex flex-col gap-6 py-4 md:flex-row">
             <div className="relative aspect-video overflow-hidden rounded-md border border-gray-100 md:aspect-square md:w-1/4">
               <Image
                 src={post.coverImage || "/placeholder.svg"}

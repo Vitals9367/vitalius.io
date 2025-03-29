@@ -26,7 +26,7 @@ export default function Navbar() {
         isScrolled && "shadow-sm",
       )}
     >
-      <div className="container mx-auto flex h-16 max-w-3xl items-center justify-between px-4">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="font-serif text-xl font-bold text-primary">
           {logo}
         </Link>
